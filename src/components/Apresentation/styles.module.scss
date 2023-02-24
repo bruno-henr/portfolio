@@ -1,5 +1,19 @@
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Titillium+Web:wght@300;400&display=swap');
 
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+
+      50% {
+          background-position: 100% 50%;
+      }
+
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
   .container {
       display: flex;
       flex-direction: column;
@@ -77,12 +91,77 @@
           font-size: 2rem;
           font-weight: bold;
           text-align: justify;
+          text-transform: uppercase;
+
+          div.text {
+
+              p {
+                  font-size: 2rem;
+
+                  label {
+                      background: -webkit-linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-size: 400% 400%;
+                      animation: gradient 15s ease infinite;
+                  }
+              }
+          }
+
+
 
           span {
               display: flex;
               float: left;
               width: 100% !important;
 
+          }
+      }
+  }
+
+  @media (min-width: 375px) {
+      .container_icon_header {
+          display: none;
+      }
+
+      .simpleNavBar {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          width: 100vw !important;
+          height: 100% !important;
+      }
+
+      .contentSimpleNav {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap !important;
+          align-items: center;
+          justify-content: center !important;
+          gap: 1rem;
+          width: 100% !important;
+          height: 100% !important;
+
+          label {
+              width: 100% !important;
+              text-align: center;
+          }
+      }
+
+      .social {
+          padding: 0px !important;
+      }
+
+      .textOfApresentation {
+          width: 100% !important;
+          padding: 0 1rem !important;
+
+          div.text {
+
+              p {
+                  font-size: 1.5rem !important;
+                  text-align: left;
+              }
           }
       }
   }

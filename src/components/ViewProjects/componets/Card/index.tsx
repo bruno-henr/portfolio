@@ -1,21 +1,29 @@
 import React from "react";
 
 import styles from "./styles.module.scss";
-import img from "./no-image.jpg";
+// import img from "./no-image.jpg";
 import { RiRadioButtonLine } from "react-icons/ri";
 import openPadLock from "./open-padlock.png";
 import lockPadLock from "./lock-padlock.png";
 
 interface IProps {
   technologies?: string[];
-  projectPublic?: boolean;
+  projectPublic: boolean;
+  name: string;
+  href: string;
+  img: any;
 }
 
-const Card: React.FC<IProps> = ({ technologies, projectPublic }) => {
+const Card: React.FC<IProps> = ({
+  technologies,
+  projectPublic = true,
+  name,
+  img,
+  href,
+}) => {
   return (
     <div className={styles.card}>
       <div className={styles.boxSide}>
-        {/* <span>teste</span> */}
         {technologies?.map((t) => {
           return <span>{t}</span>;
         })}
@@ -23,7 +31,7 @@ const Card: React.FC<IProps> = ({ technologies, projectPublic }) => {
       <div className={styles.card_image}>
         <img src={img} alt="" />
       </div>
-      <h2>teste</h2>
+      <h2>{name}</h2>
       <div className={styles.inlineBlock}>
         <div className={styles.item_card}>
           <RiRadioButtonLine className={styles.icon_online} />{" "}
@@ -43,9 +51,13 @@ const Card: React.FC<IProps> = ({ technologies, projectPublic }) => {
       </div>
 
       <div className={styles.buttonCallToVisit}>
-        <button type="button" className={styles.buttonCall}>
-          <a  href="https://www.google.com" target="_blank">Visit website</a>
-        </button>
+        {projectPublic && (
+          <button type="button" className={styles.buttonCall}>
+            <a href={href} target="_blank">
+              Visit website
+            </a>
+          </button>
+        )}
       </div>
     </div>
   );

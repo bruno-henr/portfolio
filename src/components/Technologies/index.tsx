@@ -13,6 +13,7 @@ import java from ".././../images/java.png";
 import php from ".././../images/php.png";
 import py from ".././../images/py.png";
 import chakraui from ".././../images/chakra-ui-logo.png";
+import nextjs from ".././../images/next-js.svg";
 
 export const Technologies: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ export const Technologies: React.FC = () => {
           <Card img={typescript} name="Typescript" />
           <Card img={figma} name="Figma" />
           <Card img={postgres} name="Postgres" />
+          <Card img={nextjs} name="Next JS" />
           <Card img={chakraui} name="Chakra UI" />
         </div>
       </div>

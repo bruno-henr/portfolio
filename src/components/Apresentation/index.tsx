@@ -33,14 +33,9 @@ export const Apresentation: React.FC = () => {
         </div>
       </header>
       <div className={styles.textOfApresentation}>
-        <div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>
-            Non, necessitatibus suscipit neque error unde sequi debitis
-          </p>
-          <p>
-            expedita blanditiis voluptas, aperiam nulla molestias quae ipsa
-          </p>
+        <div className={styles.text}>
+          <p>motivated by the opportunity to create new</p>
+          <p><label>solutions</label> and innovations</p>
         </div>
       </div>
     </div>
