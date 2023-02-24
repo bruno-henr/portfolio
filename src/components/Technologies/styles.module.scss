@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0;
+    flex-direction: column;
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    
+
+    .mainStack, .others {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .boxMap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 65%;
+            gap: 1rem;
+        }
+    }
+    .others {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .boxMapOthers {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 35%;
+            gap: 1rem;
+        }
+    }
+}

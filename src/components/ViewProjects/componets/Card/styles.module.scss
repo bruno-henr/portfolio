@@ -1,0 +1,110 @@
+.card {
+    position: relative;
+    background: -webkit-linear-gradient(-90deg, #121213, #191924 50%);
+    width: 100%;
+    max-width: 560px !important;
+    min-height: 590px;
+    border-radius: 20px;
+    border: 0.001px solid #1f1f1f;
+    color: #ffff;
+
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .boxSide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: -webkit-linear-gradient(-45deg, #191924 50%, #121213);
+        position: absolute;
+        width: 70px;
+        left: -70px;
+        top: 100px;
+        height: 70%;
+        border-top-left-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+        span {
+            transform: rotate(-90deg);
+            line-height: 95px;
+        }
+    }
+
+    .card_image {
+        width: 100%;
+        height: 40%;
+
+        img {
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    }
+
+    .inlineBlock {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        gap: 1rem;
+        flex-wrap: nowrap;
+
+        .item_card {
+            display: flex;
+            align-items: center;
+            gap: .2rem;
+
+            .icon_online {
+                color: #48BB78;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .blockColumn {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .labelBlack {
+                    color: #636363;
+                    font-weight: 500;
+                    display: block;
+                }
+
+                .mapTechnologies {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+                    width: 100%;
+                    // span {
+                    //     width: 25%;
+                    // }
+                }
+            }
+        }
+
+
+        button[type="button"] {
+            background: #fff !important;
+            color: inherit;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+
+        }
+
+    }
+
+}
