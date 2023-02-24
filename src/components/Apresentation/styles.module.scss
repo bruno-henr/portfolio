@@ -17,7 +17,7 @@
   .container {
       display: flex;
       flex-direction: column;
-      // background-color: red;
+      //   background-color: red;
       height: 100vh;
 
       header {
@@ -30,7 +30,9 @@
 
 
           .container_icon_header {
+            //   display: flex;
               width: 20%;
+              height: auto;
 
               img {
                   width: 50%;
@@ -119,10 +121,11 @@
       }
   }
 
-  @media (min-width: 375px) {
+  @media (max-width: 375px) {
       .container_icon_header {
           display: none;
       }
+
 
       .simpleNavBar {
           display: flex;

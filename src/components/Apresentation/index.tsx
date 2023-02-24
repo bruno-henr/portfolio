@@ -10,7 +10,7 @@ export const Apresentation: React.FC = () => {
   return (
     <div className={styles.container}>
       <header>
-        <div className={styles.container_icon_header}>
+        <div className={styles.container_icon_header} id="img-top-left">
           <img src={hand_header} alt="" />
         </div>
         <div className={styles.simpleNavBar}>
